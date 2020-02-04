@@ -137,13 +137,13 @@ for i in BatchSize:
                
                ##################### Making the predictions and evaluating the model ######################
 
-               # Predicting the Test set results
-               y_pred_dev = classifier.predict(X_dev)
+               ## Predicting the Test set results
+               #y_pred_dev = classifier.predict(X_dev)
 
                #AUC on the dev-set
-               from sklearn.metrics import roc_curve, auc
-               fpr, tpr, _ = roc_curve(y_dev, y_pred_dev)
-               auc_dev_set.append(auc(fpr, tpr))
-               print(auc_dev_set)
+               #from sklearn.metrics import roc_curve, auc
+               #fpr, tpr, _ = roc_curve(y_dev, y_pred_dev)
+               #auc_dev_set.append(auc(fpr, tpr))
+               #print(auc_dev_set)
 #    
     
